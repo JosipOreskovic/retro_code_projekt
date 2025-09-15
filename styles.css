@@ -1,9 +1,5 @@
 
 @font-face {
-    font-family: "Atarian";
-    src: url(SF_Atarian_System.ttf) format("truetype");
-}
-@font-face {
     font-family: "Arcade";
     src: url(LowresPixel-Regular.otf) format("truetype");
 }
