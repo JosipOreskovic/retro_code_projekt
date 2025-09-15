@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <div id="topnav-container"></div>
+            <script>
+                fetch('topnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('topnav-container').innerHTML = data;
+                        document.getElementById('nav-visuals').classList.add('active');
+                    });
+            </script>
+
+</body>
+<div class="gallery-vertical">
+    <div class="gallery-row">
+        <img src="retro_code_logo.png" alt="Logo Example">
+        <div class="gallery-row-text">
+            <h2>Classic Logo</h2>
+            <p>This is our original pixel art logo, representing the retro spirit of our studio.</p>
+        </div>
+    </div>
+    <div class="gallery-row">
+        <img src="retro_code_logo_3d.png" alt="3D Logo Example">
+        <div class="gallery-row-text">
+            <h2>3D Logo</h2>
+            <p>A modern 3D reinterpretation of our classic logo, blending old-school charm with new technology.</p>
+        </div>
+    </div>
+    <div class="gallery-row">
+        <video src="retro_code_logo_3d_anim.mp4" controls style="max-width:300px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2);"></video>
+        <div class="gallery-row-text">
+            <h2>Animated Logo</h2>
+            <p>Watch our logo come to life in this short animation, created to showcase our visual identity in motion.</p>
+        </div>
+    </div>
+</div>
+</html>
