@@ -2,40 +2,31 @@
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-    </div>
+            <div id="topnav-container"></div>
+            <script>
+                // Load topnav.html and insert into the page
+                fetch('topnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('topnav-container').innerHTML = data;
+                        document.getElementById('nav-home').classList.add('active');
+                    });
+            </script>
     
-    <div align="center">
-        <img src="retro_code_logo.png">
-    </div>
-    <h1>Welcome to Retro Code: Crafting the Essence of Classic Gaming</h1>
-    At Retro Code, I am passionate about bringing the charm of retro gaming back to life with a modern twist. My latest project is the development of a captivating web page that showcases my studio and my unique approach to game development. Here's a behind-the-scenes look at the methods and tools I used to bring this project to fruition.
+    <h1>Retro Code: Bringing Classic Video Games Back to Life</h1>
 
-    <h2>Text and Layout</h2>
-    I ensured that all textual content on our website is properly formatted just using HTML and CSS. This approach allows for consistent styling and a professional look.
+    <p>Welcome to Retro Code, where nostalgia meets innovation! Our studio specializes in creating unique video games that celebrate the golden age of gaming. Using the distinctive aesthetic of pixel art, we bring modern games with a retro charm that will take you back to your childhood while offering new challenges and adventures.</p>
 
-    <h2>Image Editing</h2>
-    I used GIMP to edit and process photographs, ensuring high-quality visuals that capture the essence of our games. We then integrated these images on our site using custom HTML and CSS, providing visitors with an immersive visual experience.
+    <h2>What We Do</h2>
+    <p>At Retro Code, our talented team of developers, artists, and designers is dedicated to crafting games that delight with their classic look, while providing fresh and exciting gameplay mechanics. Each of our games is a love letter to the 8-bit and 16-bit eras, filled with meticulously crafted pixel art and authentic retro music.</p>
 
-    <h2>Vector Graphics and Animations</h2>
-    To create and refine vector graphics, I leveraged tools like Inkscape. These graphics add a polished and cohesive look to my website. For animations, we utilized Blender, bringing static images to life.
+    <h2>Our Philosophy</h2>
+    <p>We believe that games can be more than just entertainment—they are art, culture, and history. Through our games, we strive to preserve the spirit of classic titles while making them accessible to a new generation of players. Every game we develop is the result of a passion for old-school titles and a desire to share that love with you.</p>
 
-    <h2>Audio Production</h2>
-    Sound plays a crucial role in the gaming experience. I processed audio content using Audacity. These audio elements are seamlessly integrated into our web page, enhancing the overall user experience.
-
-    <h2>Video Integration</h2>
-    Our video presentations, created with DaVinci Resolve, provide an engaging overview of our products and services. These videos are embedded into our website, offering visitors a comprehensive look at what Retro Code has to offer.
-
-    <h2>Step-by-Step Documentation</h2>
-    For each of the multimedia elements, I documented the creation process in detail. This includes the tools used, the steps taken, and the techniques applied, ensuring transparency and a clear understanding of my methods.
-
-    <h2>Applying Knowledge from Basics of ICT</h2>
-    In addition to the specialized tools, we applied knowledge gained from the ICT basics course to produce the core structure of our website using only HTML and CSS. This foundational approach ensured that our web page is both functional and visually appealing, adhering to web standards and best practices.
-
-    Join us at Retro Code as we continue to celebrate the golden age of gaming with our meticulously crafted web page. Dive into our world and experience the nostalgia and excitement of retro gaming like never before.
-</p>
+    <h2>Join Us!</h2>
+    <p>Dive into the world of our games and join a community of players who appreciate the beauty of pixel art and the challenge of classic gameplay mechanics. Whether you're a veteran of retro games or just discovering this charming style, Retro Code has something for everyone.</p>
 </body>
+
 </html>
