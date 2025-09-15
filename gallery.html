@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <div id="topnav-container"></div>
+            <script>
+                fetch('topnav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('topnav-container').innerHTML = data;
+                        document.getElementById('nav-gallery.html').classList.add('active');
+                    });
+            </script>
+
+</body>
+<div class="gallery-side">
+    <div class="gallery-images-stack">
+        <img src="pocetna.png" alt="Image 1">
+        <img src="spliting_03.png" alt="Image 2">
+        <img src="spliting_04.png" alt="Image 3">
+        <img src="spliting_05.png" alt="Image 4">
+    </div>
+    <div class="gallery-side-text">
+        <h2>Spliting</h2>
+        <p>
+            The bustling Mediterranean city of Split is grappling with many challenges such as rising sea levels, unemployment, unaffordable housing, and an economy overly reliant on tourism. In an unexpected turn of events, the city administration has handed over the reins to an AI system to streamline governance. Take on the role of a recently dismissed professor who, due to the AI's prioritization of other economic needs over education, now finds themselves working as a delivery person. Your mission is to uncover ways to bridge the growing divide in this society between the privileged living in a city center, and the marginalized platforms dwellers.
+            The game was developed by the indie team, consisting of programmer Josip Orešković, game composer Petra Žižak, and artist Matija Tomšić, during Future Jam organized by the Croatian Game Dev Association and the Austrian cultural forum in the Aspira University of Applied Sciences in Split.
+        </p>
+    </div>
+</div>
+</html>
