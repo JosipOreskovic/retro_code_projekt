@@ -37,4 +37,62 @@
         </div>
     </div>
 </div>
+<div class="tutorials-container">
+    <div class="tutorial-column">
+                    <h2>Creating the RC Logo in Inkscape</h2>
+                    <ol>
+                        <li><strong>Build the “R” (Tetris-style)</strong><br>
+                            Select the Rectangle Tool (F4).<br>
+                            Hold Ctrl while dragging to draw a perfect square.<br>
+                            Duplicate the square (Ctrl+D) several times.<br>
+                            Arrange the squares into a blocky “R” shape, similar to Tetris blocks.<br>
+                            Use Align and Distribute (Shift+Ctrl+A) for even spacing.
+                        </li>
+                        <li><strong>Create the “C” (Pac-Man style with mask)</strong><br>
+                            Draw a yellow square with the Rectangle Tool (F4) and fill it with yellow.<br>
+                            Create a not-full circle (Pac-Man shape):<br>
+                            Use the Circle Tool (F5) to draw a circle.<br>
+                            Adjust its start and end angles in the toolbar (at the top) to open a wedge, so it looks like Pac-Man.<br>
+                            Place this Pac-Man circle on top of the yellow square.<br>
+                            Select both the square and the Pac-Man shape → go to Object &gt; Set Mask.<br>
+                            Now the yellow square is revealed only inside the Pac-Man shape, giving you a clean Pac-Man styled C.
+                        </li>
+                        <li><strong>Arrange and Finish</strong><br>
+                            Place the R and the Pac-Man C side by side.
+                        </li>
+                    </ol>
+    </div>
+    <div class="tutorial-column">
+        <h2>Creating a 3D RC Logo in Blender</h2>
+        <ol>
+            <li><strong>Building the Letter “R” with Cubes</strong><br>
+                Open Blender and clear the default object.<br>
+                Add a cube (Shift + A → Mesh → Cube) and scale it down to the size of a “block.”<br>
+                Duplicate the cube (Shift + D) and move it into place to begin shaping the vertical stem of the letter “R.”<br>
+                Continue duplicating and arranging cubes until the structure resembles the letter.<br>
+                Stack cubes neatly to create the leg and curve of the “R.”<br>
+                Using grid snapping (Shift + Tab) helps keep everything aligned cleanly.<br>
+                Once satisfied, select all cubes and join them into a single object (Ctrl + J). This keeps the letter easy to move and edit.
+            </li>
+            <li><strong>Creating the Letter “C” as a Pac-Man Shape</strong><br>
+                Add a sphere (Shift + A → Mesh → UV Sphere) and scale it to match the proportions for the letter “C.”<br>
+                To carve out the Pac-Man-style mouth:<br>
+                Add a cone (Shift + A → Mesh → Cone) and position it so that it overlaps part of the sphere where I want the cut.<br>
+                Rotate and scale the cone until it creates a wedge-shaped slice.<br>
+                Apply a Boolean operation:<br>
+                Select the sphere → Modifiers tab → Add Modifier → Boolean → Difference.<br>
+                Choose the cone as the cutting object.<br>
+                Apply the modifier, then delete the cone.<br>
+                Rotate the modified sphere so the open wedge faces forward, creating a clean “C” shape.
+            </li>
+            <li><strong>Assembling the Logo</strong><br>
+                Position the R and C side by side to form the logo layout.<br>
+                Apply materials or colors to each letter.<br>
+                Add lighting to enhance the 3D effect:<br>
+                Position the camera and render (F12) to produce the final logo image.
+            </li>
+        </ol>
+        <p class="result">✅ Final Result: A RC 3D logo where the “R” is built from stacked cube blocks and the “C” takes on a Pac-Man-inspired look.</p>
+    </div>
+</div>
 </html>
